@@ -1,4 +1,5 @@
-import fs from 'node:fs';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const fs = require('fs');
 
 const pagesStr = fs.readFileSync('./src/pages.json', 'utf-8');
 const pagesJson = JSON.parse(pagesStr);
